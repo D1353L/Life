@@ -1,0 +1,109 @@
+#include <iostream>
+#include <conio.h>
+#include <Windows.h>
+#include <SFML/Graphics.hpp>
+#include "LIFE.h"
+
+
+void gotoxy(int xpos, int ypos); //перенос курсора в консоли
+void Event(sf::RenderWindow & window, LIFE & Obj); //обработчик событий
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+
+
+
+	int windowsizex=1000,
+		windowsizey=1000,
+		cellsizex=1,
+		cellsizey=1,
+		cellOutlineThickness=1;
+
+	sf::RenderWindow window(sf::VideoMode(windowsizex, windowsizey), "Life");
+
+	LIFE A(windowsizex, windowsizey, cellsizex, cellsizey, cellOutlineThickness);
+
+	//инициализация прямоугольников
+	sf::RectangleShape rectangle(sf::Vector2f(cellsizex, cellsizey));
+	rectangle.setFillColor(sf::Color::Black);
+	sf::Color coffee(68, 45, 37);
+	rectangle.setOutlineColor(coffee);
+	rectangle.setOutlineThickness(cellOutlineThickness);
+
+
+	A.Set("random");
+	A.Output(window, rectangle);
+	
+	unsigned int generations=0;
+
+	std::cout << "Размер окна (ширина х высота) " << windowsizex << 'x' << windowsizey << std::endl;
+
+	while (window.isOpen())
+	{
+		/*if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
+		{
+			int xmouse=sf::Mouse::getPosition(window).x;
+			int ymouse=sf::Mouse::getPosition(window).y;
+
+			std::cout << xmouse << ' ' << ymouse << std::endl;
+		}*/
+	
+		window.clear();
+
+		A.GenChange();
+		A.Output(window, rectangle);
+
+		generations++;
+		Sleep(100);
+
+		window.display();
+
+		gotoxy(0,2);
+		std::cout << "Поколений: " << generations << std::endl;
+
+
+
+		Event(window, A);
+
+		gotoxy(0,5); std::cout << "Строки_столбцы " << A.getrows() << '_' << A.getcols() << std::endl;
+
+	}
+
+	
+	_getch();
+	return 0;
+}
+
+
+void Event(sf::RenderWindow & window, LIFE & Obj) //обработчик событий
+{
+	sf::Event event;
+
+		while (window.pollEvent(event))
+		{
+			if(event.type == sf::Event::Closed)
+				window.close();
+
+			if(event.type == sf::Event::Resized)
+			{
+				sf::FloatRect visibleArea(0, 0, event.size.width, event.size.height);
+				window.setView(sf::View(visibleArea));
+
+				//Obj.Update(event.size.width, event.size.height);
+
+				std::cout << "Новый размер (ширина х высота) " << event.size.width << 'x' << event.size.height << std::endl;
+			}
+		}
+}
+
+inline void gotoxy(int xpos, int ypos) //перенос курсора в консоли
+{
+  COORD scrn;    
+ 
+  HANDLE hOuput = GetStdHandle(STD_OUTPUT_HANDLE);
+ 
+  scrn.X = xpos; scrn.Y = ypos;
+ 
+  SetConsoleCursorPosition(hOuput,scrn);
+}
