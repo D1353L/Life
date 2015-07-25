@@ -1,18 +1,15 @@
-﻿Построение начато 12.12.2013 22:22:59.
-     1>Проект "X:\C++\Projects\Life [SFML]\Life [SFML]\Life [SFML].vcxproj" в узле 2 (целевые объекты build).
+﻿Построение начато 25.07.2015 22:40:56.
+     1>Проект "x:\C++\Projects\Life [SFML]\Life [SFML]\Life [SFML].vcxproj" в узле 2 (целевые объекты build).
      1>InitializeBuildStatus:
          Создание "Debug\Life [SFML].unsuccessfulbuild", так как было задано "AlwaysCreate".
        ClCompile:
-         X:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"X:\Program Files\Microsoft Visual Studio 10.0\SFML-2.1\include" /ZI /nologo /W3 /WX- /Od /Oy- /D SFML_STATIC /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt LIFE.cpp main.cpp
+         X:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"X:\Program Files\Microsoft Visual Studio 10.0\SFML-2.1\include" /ZI /nologo /W3 /WX- /Od /Oy- /D SFML_STATIC /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>x:\c++\projects\life [sfml]\life [sfml]\main.cpp(26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-     1>x:\c++\projects\life [sfml]\life [sfml]\main.cpp(26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-     1>x:\c++\projects\life [sfml]\life [sfml]\main.cpp(30): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-     1>x:\c++\projects\life [sfml]\life [sfml]\main.cpp(88): warning C4244: аргумент: преобразование "unsigned int" в "float", возможна потеря данных
-     1>x:\c++\projects\life [sfml]\life [sfml]\main.cpp(88): warning C4244: аргумент: преобразование "unsigned int" в "float", возможна потеря данных
-         LIFE.cpp
-     1>x:\c++\projects\life [sfml]\life [sfml]\life.cpp(77): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-         Создание кода...
+     1>x:\c++\projects\life [sfml]\life [sfml]\main.cpp(24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+     1>x:\c++\projects\life [sfml]\life [sfml]\main.cpp(24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+     1>x:\c++\projects\life [sfml]\life [sfml]\main.cpp(28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+     1>x:\c++\projects\life [sfml]\life [sfml]\main.cpp(97): warning C4244: аргумент: преобразование "unsigned int" в "float", возможна потеря данных
+     1>x:\c++\projects\life [sfml]\life [sfml]\main.cpp(97): warning C4244: аргумент: преобразование "unsigned int" в "float", возможна потеря данных
        Link:
          X:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"X:\C++\Projects\Life [SFML]\Debug\Life [SFML].exe" /NOLOGO /LIBPATH:"X:\Program Files\Microsoft Visual Studio 10.0\SFML-2.1\lib" "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" "sfml-audio-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Life [SFML].exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"X:\C++\Projects\Life [SFML]\Debug\Life [SFML].pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"X:\C++\Projects\Life [SFML]\Debug\Life [SFML].lib" /MACHINE:X86 Debug\LIFE.obj
          Debug\main.obj
@@ -37,10 +34,12 @@
      1>sfml-window-s-d.lib(GlContext.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(GlContext.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
      1>sfml-window-s-d.lib(GlResource.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(GlResource.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
      1>sfml-window-s-d.lib(JoystickManager.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(JoystickManager.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
+     1>sfml-window-s-d.lib(Mouse.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(Mouse.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
      1>sfml-window-s-d.lib(VideoMode.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(VideoMode.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
      1>sfml-window-s-d.lib(Window.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(Window.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
      1>sfml-window-s-d.lib(WindowImpl.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(WindowImpl.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
      1>sfml-window-s-d.lib(WglContext.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(WglContext.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
+     1>sfml-window-s-d.lib(InputImpl.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(InputImpl.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
      1>sfml-window-s-d.lib(JoystickImpl.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(JoystickImpl.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
      1>sfml-window-s-d.lib(VideoModeImpl.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(VideoModeImpl.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
      1>sfml-window-s-d.lib(WindowImplWin32.cpp.obj) : warning LNK4099: "sfml-window-s-d.pdb" PDB не найден с "sfml-window-s-d.lib(WindowImplWin32.cpp.obj)" или на "X:\C++\Projects\Life [SFML]\Debug\sfml-window-s-d.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
@@ -62,8 +61,8 @@
        FinalizeBuildStatus:
          Файл "Debug\Life [SFML].unsuccessfulbuild" удаляется.
          Обращение к "Debug\Life [SFML].lastbuildstate".
-     1>Построение проекта "X:\C++\Projects\Life [SFML]\Life [SFML]\Life [SFML].vcxproj" завершено (целевые объекты build).
+     1>Построение проекта "x:\C++\Projects\Life [SFML]\Life [SFML]\Life [SFML].vcxproj" завершено (целевые объекты build).
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:04.96
+Затраченное время: 00:00:02.79

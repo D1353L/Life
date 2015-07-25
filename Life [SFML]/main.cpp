@@ -16,7 +16,7 @@ int main()
 		Cellsizey=10,
 		CellOutlineThickness=1;
 
-	sf::RenderWindow window(sf::VideoMode(), "Life", sf::Style::Fullscreen);
+	sf::RenderWindow window(sf::VideoMode().getDesktopMode(), "Life", sf::Style::None);
 
 	LIFE A(window.getSize().x, window.getSize().y, Cellsizex, Cellsizey, CellOutlineThickness);
 
