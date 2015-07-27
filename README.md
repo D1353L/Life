@@ -6,7 +6,8 @@ The "game" is a zero-player game, meaning that its evolution is determined by it
 # Environment
 The project is written on C++ programming language using grafical framework SFML and Visual Studio 2010 IDE for Windows operation systems.
 
-#Preview
-<p align="center">
-<img src = "http://s17.postimg.org/zb9z0fd7z/life.gif" />
-</p>
+# How to run
+Just execute Release/Life [SFML].exe
+
+# Preview
+![Life preview](http://drive.google.com/uc?id=10KyeKijDDa7ppUcmteU8RVPEMwgG48TZ)
